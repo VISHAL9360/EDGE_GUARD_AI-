@@ -1,0 +1,136 @@
+{
+  "classifier": {
+    "precision": 0.9883551673944687,
+    "recall": 0.8424317617866005,
+    "f1": 0.9095780308104487,
+    "roc_auc": 0.9813558539849554,
+    "confusion_matrix": [
+      [
+        4186,
+        8
+      ],
+      [
+        127,
+        679
+      ]
+    ]
+  },
+  "classifier_cv": {
+    "f1_mean": 0.8958290488078575,
+    "f1_std": 0.006198377244403339,
+    "auc_mean": 0.9778844067495273,
+    "auc_std": 0.0038312969950413667,
+    "n_folds": 5
+  },
+  "prob_regressor": {
+    "mae": 0.0025091799813250697,
+    "rmse": 0.006822712397045162,
+    "r2": 0.9991791333577602
+  },
+  "rul_regressor": {
+    "mae_hours": 0.000295510718452215,
+    "rmse_hours": 0.0005752084281899488,
+    "r2": 0.9952850187333053,
+    "mae_near_failure_hours": 0.000295510718452215,
+    "near_failure_test_rows": 806
+  },
+  "rul_regressor_best_model": "xgboost",
+  "rul_comparison": {
+    "xgboost": {
+      "mae_hours": 0.000295510718452215,
+      "rmse_hours": 0.0005752084281899488,
+      "r2": 0.9952850187333053,
+      "mae_near_failure_hours": 0.000295510718452215,
+      "near_failure_test_rows": 806
+    },
+    "lightgbm": {
+      "mae_hours": 0.0002976537356529002,
+      "rmse_hours": 0.0006070026808706487,
+      "r2": 0.9947493785533952,
+      "mae_near_failure_hours": 0.0002976537356529002,
+      "near_failure_test_rows": 806
+    },
+    "random_forest": {
+      "mae_hours": 0.00030847884992994136,
+      "rmse_hours": 0.000663145280402407,
+      "r2": 0.9937331852635063,
+      "mae_near_failure_hours": 0.00030847884992994136,
+      "near_failure_test_rows": 806
+    }
+  },
+  "isolation_forest": {
+    "n_estimators": 200,
+    "contamination": 0.1,
+    "train_samples": 16561,
+    "anomaly_rate": 0.2138
+  },
+  "top_features_xgb": [
+    [
+      "health_score_ema",
+      0.15515545010566711
+    ],
+    [
+      "health_score_rmean_5",
+      0.08934443444013596
+    ],
+    [
+      "transmission_temp_rmean_20",
+      0.031412430107593536
+    ],
+    [
+      "transmission_temp_rmin_20",
+      0.03133149817585945
+    ],
+    [
+      "health_score_rmean_10",
+      0.021332282572984695
+    ],
+    [
+      "brake_temp_lag20",
+      0.016080623492598534
+    ],
+    [
+      "engine_load_pct_roc_10",
+      0.012994609773159027
+    ],
+    [
+      "fuel_consumption_rate_lag20",
+      0.012401480227708817
+    ],
+    [
+      "humidity_rmean_20",
+      0.011067800223827362
+    ],
+    [
+      "vehicle_speed_rmin_20",
+      0.0109099755063653
+    ],
+    [
+      "humidity_rmean_5",
+      0.0063504730351269245
+    ],
+    [
+      "coolant_temp_rmin_20",
+      0.006258606445044279
+    ],
+    [
+      "bearing_temp_rmin_20",
+      0.0052484008483588696
+    ],
+    [
+      "health_score_rmin_10",
+      0.004932495299726725
+    ],
+    [
+      "transmission_temp_rmax_20",
+      0.004782680422067642
+    ]
+  ],
+  "shap": {
+    "computed": false,
+    "reason": "shap not installed"
+  },
+  "n_features": 575,
+  "n_train_rows": 20000,
+  "n_test_rows": 5000
+}

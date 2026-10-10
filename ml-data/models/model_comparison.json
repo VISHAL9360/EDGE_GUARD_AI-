@@ -1,0 +1,23 @@
+{
+  "xgboost": {
+    "mae_hours": 0.000295510718452215,
+    "rmse_hours": 0.0005752084281899488,
+    "r2": 0.9952850187333053,
+    "mae_near_failure_hours": 0.000295510718452215,
+    "near_failure_test_rows": 806
+  },
+  "lightgbm": {
+    "mae_hours": 0.0002976537356529002,
+    "rmse_hours": 0.0006070026808706487,
+    "r2": 0.9947493785533952,
+    "mae_near_failure_hours": 0.0002976537356529002,
+    "near_failure_test_rows": 806
+  },
+  "random_forest": {
+    "mae_hours": 0.00030847884992994136,
+    "rmse_hours": 0.000663145280402407,
+    "r2": 0.9937331852635063,
+    "mae_near_failure_hours": 0.00030847884992994136,
+    "near_failure_test_rows": 806
+  }
+}
